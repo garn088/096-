@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>影视内容新媒体传播图鉴</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #ff9696;
+    padding: 100px 0 0 200px;
+}
+.nav > li{
+    position: relative;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #e63946;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+.nav > li > span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 60px;
+    z-index: 2;
+}
+.erji{
+    position: absolute;
+    left: 220px;
+    top: 0;
+    width: 0;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 0 12px 12px 0;
+    overflow: hidden;
+    transition: width 0.3s linear;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav > li:hover .erji{
+    width: 320px;
+}
+.erji a{
+    color: #333;
+    font-size: 16px;
+    white-space: nowrap;
+}
+</style>
+</head>
+<body>
+<ul class="nav">
+    <li>
+        <span>电视剧</span>
+        <div class="erji">
+            <a href=" ">现实题材剧</a >
+            <a href="#">古装题材剧</a >
+            <a href="#">悬疑题材剧</a >
+        </div>
+    </li>
+    <li>
+        <span>综艺</span>
+        <div class="erji">
+            <a href="#">喜剧综艺</a >
+            <a href="#">纪实慢综艺</a >
+            <a href="#">竞技选秀综艺</a >
+        </div>
+    </li>
+    <li>
+        <span>电影</span>
+        <div class="erji">
+            <a href="#">商业大片</a >
+            <a href="#">文艺小众电影</a >
+            <a href="#">动画电影</a >
+        </div>
+    </li>
+</ul>
+</body>
+</html>
